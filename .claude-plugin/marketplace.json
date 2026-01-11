@@ -1,0 +1,13 @@
+{
+  "name": "mondo",
+  "owner": {
+    "name": "Mondo"
+  },
+  "plugins": [
+    {
+      "name": "plugin-neurotech",
+      "source": "./",
+      "description": "Neuroscience, neurotechnology, and BCI knowledge base"
+    }
+  ]
+}

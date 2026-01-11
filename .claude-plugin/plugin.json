@@ -5,5 +5,6 @@
   "author": {
     "name": "Mondo"
   },
-  "repository": "https://github.com/esmondo/neurotech"
+  "repository": "https://github.com/esmondo/neurotech",
+  "keywords": ["neuroscience", "neurotech", "bci", "eeg", "mne-python", "signal-processing"]
 }

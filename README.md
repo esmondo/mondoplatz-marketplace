@@ -12,29 +12,22 @@ A comprehensive neuroscience, neurotechnology, and BCI knowledge base plugin for
 
 ## Installation
 
-### 1. Extract the zip file
+1. Add the marketplace:
+   ```
+   /plugin marketplace add esmondo/neurotech
+   ```
 
-```bash
-unzip neurotech-marketplace.zip -d ~/
-```
+2. Install the plugin:
+   ```
+   /plugin install plugin-neurotech@mondo
+   ```
 
-### 2. Add the marketplace to Claude Code
+3. Restart Claude Code
 
-Start Claude Code and run:
-
-```
-/plugin marketplace add ~/neurotech-marketplace
-```
-
-### 3. Install the plugin
-
-```
-/plugin install neurotech@neurotech-marketplace
-```
-
-### 4. Restart Claude Code
-
-The plugin is now active.
+4. Check it worked:
+   ```
+   /plugin
+   ```
 
 ## Usage
 
@@ -48,13 +41,15 @@ The neurotech skill triggers automatically when you mention:
 
 ### Slash Command
 
-Use `/analyze-eeg` to get help with EEG/MEG analysis pipelines.
+Use `/plugin-neurotech:analyze-eeg` to get help with EEG/MEG analysis pipelines.
 
 ## What's Included
 
 ```
 neurotech/
-├── .claude-plugin/plugin.json
+├── .claude-plugin/
+│   ├── marketplace.json
+│   └── plugin.json
 ├── commands/
 │   └── analyze-eeg.md
 └── skills/neurotech/
@@ -77,3 +72,7 @@ The plugin uses progressive disclosure:
 - Only SKILL.md loads on trigger (~2KB)
 - Reference files load on-demand when needed
 - Grep search patterns for finding specific sections in large files
+
+---
+
+Built by Mondo for neuroscience and BCI developers.
