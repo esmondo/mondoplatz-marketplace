@@ -1,0 +1,9 @@
+{
+  "name": "plugin-neurotech",
+  "description": "Comprehensive neuroscience, neurotechnology, and BCI knowledge base. Provides guidance for EEG/MEG signal processing, BCI development, mental health applications, and neural data analysis with MNE-Python.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Mondo"
+  },
+  "repository": "https://github.com/esmondo/neurotech"
+}
