@@ -1,78 +1,69 @@
-# Neurotech Plugin for Claude Code
+# Mondoplatz
 
-A comprehensive neuroscience, neurotechnology, and BCI knowledge base plugin for Claude Code.
+A curated marketplace of Claude Code plugins by Mondo.
 
-## Features
+## Available Plugins
 
-- **MNE-Python guidance**: Complete reference for EEG/MEG analysis
-- **BCI development**: P300, SSVEP, motor imagery paradigms
-- **Signal processing**: Filtering, artifact removal, frequency analysis
-- **Mental health biomarkers**: Depression, anxiety, ADHD markers
-- **Market analysis**: Neurotech industry landscape
+### 🧠 Neurotech
+Comprehensive neuroscience, neurotechnology, and BCI knowledge base for Claude Code.
+
+**Features:**
+- MNE-Python guidance for EEG/MEG analysis
+- BCI development (P300, SSVEP, motor imagery)
+- Signal processing and artifact removal
+- Mental health biomarkers
+- Neurotech industry analysis
+
+[📖 Plugin Documentation](./plugins/neurotech/README.md)
 
 ## Installation
 
-1. Add the marketplace:
-   ```
-   /plugin marketplace add esmondo/neurotech
-   ```
+### Adding the Marketplace
 
-2. Install the plugin:
-   ```
-   /plugin install plugin-neurotech@mondo
-   ```
+```bash
+/plugin marketplace add esmondo/mondoplatz
+```
 
-3. Restart Claude Code
+### Installing Plugins
 
-4. Check it worked:
-   ```
-   /plugin
-   ```
+#### Neurotech Plugin
+```bash
+/plugin install plugin-neurotech@mondo
+```
 
-## Usage
+Then restart Claude Code and verify:
+```bash
+/plugin
+```
 
-### Automatic Skill Activation
+## Plugin Development
 
-The neurotech skill triggers automatically when you mention:
-- EEG, MEG, BCI, brain signals
-- MNE, epochs, evoked, preprocessing
-- Motor imagery, P300, SSVEP
-- Neurofeedback, neural, biosignals
+This marketplace follows the Claude Code plugin architecture. Each plugin is contained in the `plugins/` directory with its own:
+- `.claude-plugin/` - Plugin configuration
+- `commands/` - Slash commands
+- `skills/` - Knowledge base skills
+- `agents/` - Custom agents (optional)
 
-### Slash Command
-
-Use `/plugin-neurotech:analyze-eeg` to get help with EEG/MEG analysis pipelines.
-
-## What's Included
+## Structure
 
 ```
-neurotech/
+mondoplatz/
+├── README.md                      # This file
 ├── .claude-plugin/
-│   ├── marketplace.json
-│   └── plugin.json
-├── commands/
-│   └── analyze-eeg.md
-└── skills/neurotech/
-    ├── SKILL.md
-    └── references/
-        ├── mne-python.md              # MNE-Python API reference
-        ├── bci-systems.md             # BCI paradigms & hardware
-        ├── signal-processing.md       # Preprocessing pipelines
-        ├── mental-health-applications.md
-        ├── neuroscience-fundamentals.md
-        ├── neurotech-market.md
-        ├── tools-and-packages.md
-        ├── evidence-based-validation.md
-        └── learning-resources.md
+│   └── marketplace.json          # Marketplace configuration
+├── plugins/
+│   └── neurotech/               # Neurotech plugin
+│       ├── .claude-plugin/
+│       ├── commands/
+│       ├── skills/
+│       └── README.md
+└── docs/                         # Additional documentation
 ```
 
-## Token Efficiency
+## Contributing
 
-The plugin uses progressive disclosure:
-- Only SKILL.md loads on trigger (~2KB)
-- Reference files load on-demand when needed
-- Grep search patterns for finding specific sections in large files
+Want to add your plugin to Mondoplatz? Open an issue or PR!
 
 ---
 
-Built by Mondo for neuroscience and BCI developers.
+Built by [Mondo](https://github.com/esmondo) for the Claude Code community.

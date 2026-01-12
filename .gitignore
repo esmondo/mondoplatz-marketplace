@@ -1,31 +1,39 @@
-# Dependencies
-node_modules/
-*.lock
-yarn.lock
-pnpm-lock.yaml
-
-# Environment
-.env
-.env.local
-.env.*.local
-
-# OS
+# OS files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
-# IDE
+# Editor files
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
+.project
+.settings/
 
-# Build
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+
+# Build outputs
 dist/
 build/
-.next/
-out/
-
-# Logs
 *.log
-logs/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Temp files
+*.tmp
+.cache/

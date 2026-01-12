@@ -6,7 +6,7 @@
   "plugins": [
     {
       "name": "plugin-neurotech",
-      "source": "./",
+      "source": "./plugins/neurotech",
       "description": "Neuroscience, neurotechnology, and BCI knowledge base"
     }
   ]
