@@ -16,6 +16,17 @@ Comprehensive neuroscience, neurotechnology, and BCI knowledge base for Claude C
 
 [📖 Plugin Documentation](./plugins/neurotech/README.md)
 
+### 🤖 Business Autopilot
+Department-based AI agents to run your business on autopilot.
+
+**Features:**
+- 14 specialized agents across 7 departments (Engineering, Product, Marketing, Design, PM, Operations, Testing)
+- Workflow commands for common business tasks
+- Chainable agent workflows for complex processes
+- Customizable agent prompts
+
+[📖 Plugin Documentation](./plugins/business-autopilot/README.md)
+
 ## Installation
 
 ### Adding the Marketplace
@@ -29,6 +40,11 @@ Comprehensive neuroscience, neurotechnology, and BCI knowledge base for Claude C
 #### Neurotech Plugin
 ```bash
 /plugin install plugin-neurotech@mondo
+```
+
+#### Business Autopilot Plugin
+```bash
+/plugin install business-autopilot@mondo
 ```
 
 Then restart Claude Code and verify:
@@ -52,8 +68,14 @@ mondoplatz/
 ├── .claude-plugin/
 │   └── marketplace.json          # Marketplace configuration
 ├── plugins/
-│   └── neurotech/               # Neurotech plugin
+│   ├── neurotech/               # Neurotech plugin
+│   │   ├── .claude-plugin/
+│   │   ├── commands/
+│   │   ├── skills/
+│   │   └── README.md
+│   └── business-autopilot/      # Business Autopilot plugin
 │       ├── .claude-plugin/
+│       ├── agents/
 │       ├── commands/
 │       ├── skills/
 │       └── README.md

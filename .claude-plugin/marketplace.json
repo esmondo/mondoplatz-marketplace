@@ -8,6 +8,11 @@
       "name": "plugin-neurotech",
       "source": "./plugins/neurotech",
       "description": "Neuroscience, neurotechnology, and BCI knowledge base"
+    },
+    {
+      "name": "business-autopilot",
+      "source": "./plugins/business-autopilot",
+      "description": "Department-based AI agents to run your business on autopilot"
     }
   ]
 }

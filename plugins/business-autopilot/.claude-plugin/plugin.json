@@ -1,0 +1,10 @@
+{
+  "name": "business-autopilot",
+  "description": "Department-based AI agents to run solo businesses and small teams on autopilot",
+  "version": "1.0.0",
+  "author": {
+    "name": "Mondo"
+  },
+  "repository": "https://github.com/esmondo/mondoplatz-marketplace",
+  "keywords": ["automation", "agents", "solopreneur", "business"]
+}
