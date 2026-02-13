@@ -15,8 +15,8 @@
       "description": "Department-based AI agents to run your business on autopilot"
     },
     {
-      "name": "content-creation",
-      "source": "./plugins/content-creation",
+      "name": "content-creation-system",
+      "source": "./plugins/content-creation-system",
       "description": "Multi-agent content creation with idea validation, trend intelligence, and production planning"
     }
   ]

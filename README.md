@@ -27,7 +27,7 @@ Department-based AI agents to run your business on autopilot.
 
 [📖 Plugin Documentation](./plugins/business-autopilot/README.md)
 
-### 📣 Content Creation
+### 📣 Content Creation System
 Multi-agent content creation with idea validation, trend intelligence, and production planning for social media.
 
 **Features:**
@@ -36,7 +36,7 @@ Multi-agent content creation with idea validation, trend intelligence, and produ
 - Production planning (blueprints, repurposing)
 - Brand persona alignment
 
-[📖 Plugin Documentation](./plugins/content-creation/README.md)
+[📖 Plugin Documentation](./plugins/content-creation-system/README.md)
 
 ## Installation
 
@@ -58,9 +58,9 @@ Multi-agent content creation with idea validation, trend intelligence, and produ
 /plugin install business-autopilot@mondo
 ```
 
-#### Content Creation Plugin
+#### Content Creation System Plugin
 ```bash
-/plugin install content-creation@mondo
+/plugin install content-creation-system@mondo
 ```
 
 Then restart Claude Code and verify:
@@ -95,7 +95,7 @@ mondoplatz/
 │   │   ├── commands/
 │   │   ├── skills/
 │   │   └── README.md
-│   └── content-creation/       # Content Creation plugin
+│   └── content-creation-system/  # Content Creation System plugin
 │       ├── .claude-plugin/
 │       ├── commands/
 │       ├── skills/
