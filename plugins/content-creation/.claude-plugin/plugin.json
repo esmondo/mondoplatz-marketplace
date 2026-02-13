@@ -1,0 +1,8 @@
+{
+  "name": "content-creation",
+  "description": "Multi-agent content creation system with idea validation, trend intelligence, and production planning for social media. Coordinates ideation, validation, planning, and distribution.",
+  "version": "1.0.0",
+  "author": {"name": "Mondo"},
+  "repository": "https://github.com/esmondo/berkarja",
+  "keywords": ["content-creation", "social-media", "trends", "multi-agent", "validation", "planning"]
+}

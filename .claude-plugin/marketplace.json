@@ -13,6 +13,11 @@
       "name": "business-autopilot",
       "source": "./plugins/business-autopilot",
       "description": "Department-based AI agents to run your business on autopilot"
+    },
+    {
+      "name": "content-creation",
+      "source": "./plugins/content-creation",
+      "description": "Multi-agent content creation with idea validation, trend intelligence, and production planning"
     }
   ]
 }
